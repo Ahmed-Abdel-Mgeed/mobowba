@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	  <!-- Meta Tags -->
+	  <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="description" content="">
+	  <meta name="keywords" content="">
+	  <meta name="author" content="">
+	  <title>New Post!</title>
+
+	  <!-- Facebook and Twitter integration -->
+	  <meta property="og:title" content="">
+	  <meta property="og:image" content="">
+	  <meta property="og:url" content="">
+	  <meta property="og:site_name" content="">
+	  <meta property="og:description" content="">
+	  <meta name="twitter:title" content="">
+	  <meta name="twitter:image" content="">
+	  <meta name="twitter:url" content="">
+	  <meta name="twitter:card" content="">
+
+	  <!-- styles -->
+	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+	  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	  <link rel="shortcut icon" href="favicon.ico">
+
+	  <!-- Modernizr JS -->
+	  <script src="js/modernizr-2.6.2.min.js"></script>
+	  <!-- FOR IE9 below -->
+	  <!--[if lt IE 9]>
+	  <script src="js/respond.min.js"></script>
+	  <![endif]-->
+	</head>
+
+	<body>
+
+		<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+										<header> Have 3 Sections :
+										1-Navbar
+										2-Section.login-form
+										3-section.signup-form
+		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<header class="header">
+		  <nav class="navbar navbar-inverse navbar-fixed-top">
+		    <div class="container-fluid">
+		      <div class="navbar-header">
+		        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		        	<span class="icon-bar"></span>
+		      	</button>
+						<a class="btn lang-btn" href="questions-arabic.html">ع</a>
+						<div class="navbar-brand">
+	            <ul class="nav navbar-nav">
+	              <li class="dropdown">
+	                <button data-toggle="dropdown" class="dropdown-toggle">
+
+	                  <span class="page-user-img">
+	                    <img src="images/avatar.jpg" alt="">
+	                  </span>
+
+	                  <span class="page-user-name">
+	                    user name...
+	                  </span>
+
+	                  <b class="caret"></b>
+	                </button>
+                  <ul class="dropdown-menu">
+                    <li class="divider"></li>
+                    <li>
+                      <a href="new-post-english.html"><span class="glyphicon glyphicon-plus"></span> add new page </a>
+                    </li>
+                    <li><a href="new-ads-english.html"><span class="glyphicon glyphicon-th"></span> add new ads</a></li>
+                    <li class="divider"></li>
+                    <li><a href="user-page-english.html"><span class="glyphicon glyphicon-user"></span> profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#.html"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                    <li class="divider"></li>
+                  </ul>
+	              </li>
+	            </ul>
+						</div><!-- .brand -->
+		      </div><!-- .navbar-header -->
+		      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+		        <ul class="nav navbar-nav">
+		          <li><a href="home-english.html"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+		          <li><a href="contactus-english.html"><span class="glyphicon glyphicon-earphone"></span> Contact Us </a></li>
+		          <li class="active"><a href="questions-english.html"><span class="glyphicon glyphicon-question-sign"></span> Common Questions </a></li>
+		          <li><a href="#" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-user"></span> Sign Up </a></li>
+		          <li><a href="#" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+		        </ul>
+	      	</div>
+		    </div>
+		  </nav>
+
+			<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+													Login Form
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		  <section class="login-form">
+	      <div class="container">
+	        <!-- Modal -->
+	        <div class="modal fade" id="login" role="dialog">
+	          <div class="modal-dialog">
+
+	            <!-- Modal content-->
+	            <div class="modal-content">
+	              <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                <h4 class="modal-title"><span class="glyphicon glyphicon-log-in"></span> Login</h4>
+	              </div>
+	              <!-- Modal body -->
+	              <div class="modal-body">
+	                <!--Login Form -->
+	                <form id="login_form" class="text-right">
+
+	                  <!-- Email input-->
+	                  <div class="form-group">
+	                    <label class="sr-only control-label">E-Mail</label>
+	                    <div class=" inputGroupContainer">
+	                      <div class="input-group">
+	                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+	                        <input name="email" placeholder="E-Mail Address" class="form-control" type="email">
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <!-- Text input-->
+	                  <div class="form-group">
+	                    <label class="sr-only control-label">Password</label>
+	                    <div class=" inputGroupContainer">
+	                      <div class="input-group">
+	                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+	                        <input name="password" placeholder="Password" class="form-control" type="password">
+	                      </div>
+	                    </div>
+	                  </div>
+
+	                  <div class="btn-group">
+	                    <button type="submit" class="btn btn-default"> Login</button>
+	                  </div>
+	                </form>
+	              </div><!-- .Modal-Body -->
+	              <!-- Modal-footer -->
+	              <div class="modal-footer">
+	                <button type="button" class="close" data-dismiss="modal">Close</button>
+	                <div class="account-help text-left">
+	                  <a href="contactus.html">Need Help?</a>
+	                </div>
+	              </div>
+	            </div><!-- .Modal-Content -->
+	          </div><!-- .Modal-Dialog -->
+	        </div><!-- .Modal -->
+	      </div><!-- .Container -->
+	    </section><!-- .Login-Form -->
+
+			<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+											Sign Up Form
+			~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		  <section class="signup">
+		    <div class="container">
+		      <!-- Modal -->
+		      <div class="modal fade" id="signup" role="dialog">
+		        <div class="modal-dialog">
+
+		          <!-- Modal content-->
+		          <div class="modal-content">
+		            <div class="modal-header">
+		              <button type="button" class="close" data-dismiss="modal">&times;</button>
+		              <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span> signUp</h4>
+		            </div>
+		            <!-- Modal body -->
+		            <div class="modal-body">
+		              <!--Signup Form -->
+		              <form class="text-righit" id="signup_form">
+
+		                <!-- Text input-->
+		                <div class="form-group">
+		                  <label class="sr-only control-label">Full name</label>
+		                  <div class=" inputGroupContainer">
+		                    <div class="input-group">
+		                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		                      <input name="full_name" placeholder="Full name" class="form-control" type="text">
+		                    </div>
+		                  </div>
+		                </div>
+
+		                <!-- Text input-->
+		                <div class="form-group">
+		                  <label class="sr-only control-label">user name</label>
+		                  <div class=" inputGroupContainer">
+		                    <div class="input-group">
+		                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		                      <input name="user_name" placeholder="choose user name" class="form-control" type="text">
+		                    </div>
+		                  </div>
+		                </div>
+
+		                <!-- Text input-->
+		                <div class="form-group">
+		                  <label class="sr-only control-label">E-Mail</label>
+		                  <div class=" inputGroupContainer">
+		                    <div class="input-group">
+		                      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+		                      <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+		                    </div>
+		                  </div>
+		                </div>
+
+										<!-- Text input-->
+                    <div class="form-group">
+                      <label class="sr-only control-label">phone</label>
+                      <div class=" inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                          <input name="phone" placeholder="Your Phone Number" class="form-control" type="phone">
+                        </div>
+                      </div>
+                    </div>
+
+		                <!-- Text input-->
+		                <div class="form-group">
+		                  <label class="sr-only control-label">Password</label>
+		                  <div class=" inputGroupContainer">
+		                    <div class="input-group">
+		                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+		                      <input name="password" placeholder="Password" class="form-control" type="password">
+		                    </div>
+		                  </div>
+		                </div>
+
+		                <!-- Text input-->
+		                <div class="form-group">
+		                  <label class="sr-only control-label">Confirm password</label>
+		                  <div class=" inputGroupContainer">
+		                    <div class="input-group">
+		                      <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+		                      <input name="confirm_password" placeholder="Password" class="form-control" type="password">
+		                    </div>
+		                  </div>
+		                </div>
+
+		                <!-- Success message -->
+		                <div class="alert alert-success" role="alert" id="success_message">Success
+		                  <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.
+		                </div>
+
+		                <!-- Button -->
+		                <div class="form-group">
+		                  <label class="sr-only control-label"></label>
+		                  <div class="btn-group text-righit">
+		                  	<button type="submit" class="btn btn-default">
+													<span class="glyphicon glyphicon-user"></span> SignUp
+												</button>
+		                  </div>
+		                </div>
+		              </form>
+		            </div><!-- .Modal-Body -->
+
+		            <!-- Modal-footer -->
+		            <div class="modal-footer">
+		              <button type="button" class="close" data-dismiss="modal">Close</button>
+		              <div class="account-help text-left">
+		                <a href="contactus.html">Need Help?</a>
+		              </div>
+		            </div>
+
+		          </div><!-- .Modal-Content -->
+		        </div><!-- .Modal-Dialog -->
+		      </div><!-- .Modal -->
+		    </div><!-- .Container -->
+		  </section><!-- .SignUp -->
+		</header>
+
+		<main>
+			<section class="questions">
+
+				<!-- page persentation -->
+	      <div class="title">
+	        <div class="row">
+	          <div class="head">
+	            <h1 class="text-center">Common Questions</h1>
+	          </div>
+	        </div><!-- .row -->
+
+	        <div class="row text-center">
+	          <p class="h3">Here You Will find all Questions You Are Searching For And The Full Knowlegde</p>
+	        </div>
+	      </div><!-- .title -->
+
+				<div class="row">
+					<div class="container">
+				 		<div class="panel-group" id="accordion">
+		          <div class="panel panel-default">
+		            <div class="panel-heading">
+		              <h4 class="panel-title">
+		                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Q N 0 <span class="glyphicon glyphicon-plus"></span></a>
+		              </h4>
+		            </div><!-- .panel-heading -->
+		            <div id="collapseOne" class="panel-collapse collapse">
+		              <div class="panel-body">
+		                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+											Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+											Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+											Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+		                </div><!-- .btn-group -->
+		              </div><!-- .panel-body -->
+		            </div><!-- .panel-collapse -->
+		          </div><!-- .panel -->
+
+		          <div class="panel panel-default">
+		            <div class="panel-heading">
+		              <h4 class="panel-title">
+		                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Q N 1 <span class="glyphicon glyphicon-plus"></span></a>
+		              </h4>
+		            </div><!-- .panel-heading -->
+		            <div id="collapse2" class="panel-collapse collapse">
+		              <div class="panel-body">
+		                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+											Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+											Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+											Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+		                </div><!-- .btn-group -->
+		              </div><!-- .panel-body -->
+		            </div><!-- .panel-collapse -->
+		          </div><!-- .panel -->
+
+							<div class="panel panel-default">
+		            <div class="panel-heading">
+		              <h4 class="panel-title">
+		                <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Q N 2 <span class="glyphicon glyphicon-plus"></span></a>
+		              </h4>
+		            </div><!-- .panel-heading -->
+		            <div id="collapse7" class="panel-collapse collapse">
+		              <div class="panel-body">
+		                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+											Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+											Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+											Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+		                </div><!-- .btn-group -->
+		              </div><!-- .panel-body -->
+		            </div><!-- .panel-collapse -->
+		          </div><!-- .panel -->
+
+		          <div class="panel panel-default">
+		            <div class="panel-heading">
+		              <h4 class="panel-title">
+		                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Q N 3 <span class="glyphicon glyphicon-plus"></span></a>
+		              </h4>
+		            </div><!-- .panel-heading -->
+		            <div id="collapse3" class="panel-collapse collapse">
+		              <div class="panel-body">
+		                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+											Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+											Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+											Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+		                </div><!-- .btn-group -->
+		              </div><!-- .panel-body -->
+		            </div><!-- .panel-collapse -->
+		          </div><!-- .panel -->
+
+		          <div class="panel panel-default">
+		            <div class="panel-heading">
+		              <h4 class="panel-title">
+		                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Q N 4 <span class="glyphicon glyphicon-plus"></span></a>
+		              </h4>
+		            </div><!-- .panel-heading -->
+		            <div id="collapse4" class="panel-collapse collapse">
+		              <div class="panel-body">
+		                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+											Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+											Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+											Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+		                </div><!-- .btn-group -->
+		              </div><!-- .panel-body -->
+		            </div><!-- .panel-collapse -->
+		          </div><!-- .panel -->
+
+		          <div class="panel panel-default">
+		            <div class="panel-heading">
+		              <h4 class="panel-title">
+		                <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Q N 5 <span class="glyphicon glyphicon-plus"></span></a>
+		              </h4>
+		            </div><!-- .panel-heading -->
+		            <div id="collapse5" class="panel-collapse collapse">
+		              <div class="panel-body">
+		                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+											Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+											Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+											Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+		                </div><!-- .btn-group -->
+		              </div><!-- .panel-body -->
+		            </div><!-- .panel-collapse -->
+		          </div><!-- .panel -->
+
+		          <div class="panel panel-default">
+		            <div class="panel-heading">
+		              <h4 class="panel-title">
+		                <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Q N 6 <span class="glyphicon glyphicon-plus"></span></a>
+		              </h4>
+		            </div><!-- .panel-heading -->
+		            <div id="collapse6" class="panel-collapse collapse">
+		              <div class="panel-body">
+		                <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+											Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+											Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+											Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+										</div><!-- .btn-group -->
+		              </div><!-- .panel-body -->
+		            </div><!-- .panel-collapse -->
+		          </div><!-- .panel -->
+						</div><!-- panel-group -->
+		      </div><!-- .container -->
+				</div><!-- .row -->
+			</section>
+		</main>
+
+		<footer class="site-footer">
+		  <div class="row">
+		    <div class="col-xs-12">
+	        <div class="row contacts">
+	          <div class="col-sm-6 col-xs-12">
+	            <a href="questions-english.html" class="btn btn-default">Common Questions <span class="glyphicon glyphicon-question-sign"></span></a>
+	          </div>
+	          <div class="col-sm-6 col-xs-12">
+	            <a href="contactus-english.html" class="btn btn-default">Contact Us <span class="glyphicon glyphicon-earphone"></span></a>
+	          </div>
+	        </div>
+		    </div>
+
+		    <div class="socils col-xs-12 text-center">
+		      <a href="#">
+				<img src="images/fb.png" alt="">
+			</a>
+		      <a href="#">
+				<img src="images/tw.png" alt="">
+			</a>
+		      <a href="#">
+				<img src="images/insta.png" alt="">
+			</a>
+		    </div>
+		  </div>
+		</footer>
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrapValidator.min.js"></script>
+		<script src="js/plugins.js"></script>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+
+
+html{
+
+}
+
+
+body{
+  direction: rtl;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/***********  rtl fixes **********/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+/*
+///Navbar
+*/
+
+.navbar-brand .dropdown-menu a:hover{
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/***********  aside fixes **********/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+aside .nav>li>a{
+
+}
+
+aside .nav>li>a:hover,
+aside .nav>li>a:focus{
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+#accordion .panel{
+  text-align: right;
+}
+
+#accordion .panel-heading a .glyphicon{
+  right: auto;
+  left: 2px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/***********  socils filters fixes **********/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.socils-toggler .btn-group-vertical{
+  left: 0;
+  right: auto;
+  opacity: .3;
+}
+
+.socils-toggler .btn-group-vertical .btn{
+  float: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/***********  post fixes **********/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.cost{
+  left: 0px;
+  right: auto;
+}
+
+.minmum-cost {
+  clip-path: polygon(80% 0%, 100% 100%, 0% 100%, 0% 0%);
+}
+
+.post-contact .user-info{
+  float: right;
+}
+
+.post-contact .avatar{
+  float: right;
+}
+
+.post-contact .user-name{
+  padding: 10px 50px 0 0;
+  text-align: right;
+}
+
+.post .filters-box{
+  text-align: left;
+}
+
+.card .front-info{
+  text-align: right;
+}
+
+.card-contact .cost {
+  left: 0px;
+  right: auto;
+}
+
+.modal-body .information{
+  text-align: right;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/***********  New Post Page **********/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.new-post .section-layers-togglers .nav-pills .presentation:last-of-type {
+  border-radius: 6px 0 0 6px;
+}
+
+.new-post .section-layers-togglers .nav-pills .presentation:first-of-type {
+  border-radius: 0 6px 6px 0;
+}
+.input-group-addon:first-child{
+  border-color: #725e5e;
+
+}
+
+
+
+
+
+/*-- Fixs
+====================*/
+
+.post-contact .avatar, .card-contact .avatar {
+  float: right;
+}
+
+.help-block {
+  text-align: left;
+}

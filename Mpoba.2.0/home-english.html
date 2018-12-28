@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>New Post!</title>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:url" content="">
+    <meta name="twitter:card" content="">
+
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    <header>
+  									 Have 3 Sections :
+  										1-Navbar
+  										2-Section.login-form
+  										3-section.signup-form
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <header class="header">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  	        	<span class="icon-bar"></span>
+  	        	<span class="icon-bar"></span>
+  	        	<span class="icon-bar"></span>
+  	      	</button>
+
+            <a class="btn lang-btn" href="home-arabic.html">ع</a>
+            <div class="navbar-brand">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <button data-toggle="dropdown" class="dropdown-toggle">
+
+                    <span class="page-user-img">
+                      <img src="images/avatar.jpg" alt="">
+                    </span>
+
+                    <span class="page-user-name">
+                      user name...
+                    </span>
+
+                    <b class="caret"></b>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li class="divider"></li>
+                    <li>
+                      <a href="new-post-english.html"><span class="glyphicon glyphicon-plus"></span> add new page </a>
+                    </li>
+                    <li><a href="new-ads-english.html"><span class="glyphicon glyphicon-th"></span> add new ads</a></li>
+                    <li class="divider"></li>
+                    <li><a href="user-page-english.html"><span class="glyphicon glyphicon-user"></span> profile</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                    <li class="divider"></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- .brand -->
+          </div><!-- .navbar-header -->
+          <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="home-english.html"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+              <li><a href="contactus-english.html"><span class="glyphicon glyphicon-earphone"></span> Contact Us </a></li>
+              <li><a href="questions-english.html"><span class="glyphicon glyphicon-question-sign"></span> Common Questions </a></li>
+              <li><a href="#" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-user"></span> Sign Up </a></li>
+              <li><a href="#" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      											Login Form
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <section class="login-form">
+          <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="login" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"><span class="glyphicon glyphicon-log-in"></span> Login</h4>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <!--Login Form -->
+                    <form id="login_form" class="text-right">
+
+                      <!-- Email input-->
+                      <div class="form-group">
+                        <label class="sr-only control-label">E-Mail</label>
+                        <div class=" inputGroupContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input name="email" placeholder="E-Mail Address" class="form-control" type="email">
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <label class="sr-only control-label">Password</label>
+                        <div class=" inputGroupContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input name="password" placeholder="Password" class="form-control" type="password">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="btn-group">
+                        <button type="submit" class="btn btn-default"> Login</button>
+                      </div>
+                    </form>
+                  </div><!-- .Modal-Body -->
+                  <!-- Modal-footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="close" data-dismiss="modal">Close</button>
+                    <div class="account-help text-left">
+                      <a href="contactus-english.html">Need Help?</a>
+                    </div>
+                  </div>
+                </div><!-- .Modal-Content -->
+              </div><!-- .Modal-Dialog -->
+            </div><!-- .Modal -->
+          </div><!-- .Container -->
+        </section><!-- .Login-Form -->
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  									Sign Up Form
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <section class="signup">
+        <div class="container">
+          <!-- Modal -->
+          <div class="modal fade" id="signup" role="dialog">
+            <div class="modal-dialog">
+
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span> signUp</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <!--Signup Form -->
+                  <form class="text-right" id="signup_form">
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="sr-only control-label">Full name</label>
+                      <div class=" inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input name="full_name" placeholder="Full name" class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="sr-only control-label">user name</label>
+                      <div class=" inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                          <input name="user_name" placeholder="choose user name" class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="sr-only control-label">E-Mail</label>
+                      <div class=" inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                          <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="sr-only control-label">phone</label>
+                      <div class=" inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                          <input name="phone" placeholder="Your Phone Number" class="form-control" type="phone">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="sr-only control-label">Password</label>
+                      <div class=" inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                          <input name="password" placeholder="Password" class="form-control" type="password">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="sr-only control-label">Confirm password</label>
+                      <div class=" inputGroupContainer">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                          <input name="confirm_password" placeholder="Password" class="form-control" type="password">
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Success message -->
+                    <div class="alert alert-success" role="alert" id="success_message">Success
+                      <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                      <label class="sr-only control-label"></label>
+                      <div class="btn-group text-righit">
+                        <button type="submit" class="btn btn-default">
+  												<span class="glyphicon glyphicon-user"></span> SignUp
+  											</button>
+                      </div>
+                    </div>
+                  </form>
+                </div><!-- .Modal-Body -->
+
+                <!-- Modal-footer -->
+                <div class="modal-footer">
+                  <button type="button" class="close" data-dismiss="modal">Close</button>
+                  <div class="account-help text-left">
+                    <a href="contactus.html">Need Help?</a>
+                  </div>
+                </div>
+
+              </div><!-- .Modal-Content -->
+            </div><!-- .Modal-Dialog -->
+          </div><!-- .Modal -->
+        </div><!-- .Container -->
+      </section><!-- .SignUp -->
+    </header>
+
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    									 Have 2 main Sections :
+    										1-About Us
+    										2-div.flex-container
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    <main style="background-color: #024959; color: #fff;">
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    													About Us Section
+    		~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="about-us">
+          <div class="row">
+            <div class="describe">
+              <div class="container-fluid">
+                <h3 class="h2 text-center">about <strong></strong></h3>
+                <div class="col-lg-3 col-sm-6">
+                  <h3 class="h4 text-center"><span class="glyphicon glyphicon-tower"></span> Advertisers</h3>
+                  <p class="text-center">
+                    Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+                  </p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                  <h3 class="h4 text-center"><span class="glyphicon glyphicon-edit"></span> Publishers</h3>
+                  <p class="text-center">
+                    Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+                  </p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                  <h3 class="h4 text-center"><span class="glyphicon glyphicon-refresh"></span> Exchange of ads</h3>
+                  <p class="text-center">
+                    Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+                  </p>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                  <h3 class="h4 text-center"><span class="glyphicon glyphicon-usd"></span> Pages for sale</h3>
+                  <p class="text-center">
+                    Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+                  </p>
+                </div>
+
+              </div><!-- Container-->
+            </div><!-- .describe -->
+          </div><!-- .row -->
+        </section>
+
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    										*-div.Flex-Container That Contaianing Tha Whole Content
+    										  Betwen The <header> & the <footer>
+    										Have 2 Sections :
+    										1-<aside>
+    										2-div.page-content
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <div class="flex-container">
+          <aside>
+            <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    													<aside> Side Bar
+    													That Contaianing The Togglers And The filters
+    													Have 3 Sections :
+    													1-section.search-form
+    													2-section.sections-togglers
+    													3-section.filters
+    				~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+            <section class="search-form">
+              <h3 class="sr-only">Filters</h3>
+              <form>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+										  <i class="glyphicon glyphicon-search"></i>
+										</button>
+                  </div>
+                </div>
+              </form>
+            </section>
+
+            <section class="sections-togglers">
+              <h3 class="h3">Sections</h3>
+              <div class="toggler-sections-tabs">
+                <ul class="nav nav-pills">
+                  <li class="active"><a data-toggle="pill" href="#advertisers" class="adv"><span class="glyphicon glyphicon-tower"></span> Advertisers</a></li>
+                  <li><a data-toggle="pill" href="#publishers" class="pub"><span class="glyphicon glyphicon-edit"></span> Publishers</a></li>
+                  <li><a data-toggle="pill" href="#exchange" class="exc"><span class="glyphicon glyphicon-refresh"></span> Exchange Of Ads</a></li>
+                  <li><a data-toggle="pill" href="#for_sale" class="pfs"><span class="glyphicon glyphicon-usd"></span> Pages For Sale</a></li>
+                </ul>
+              </div><!-- .Toggler-Sections-Tabs -->
+            </section><!-- .Sections-Togglers -->
+
+            <section class="filters">
+
+              <h3 class="h3">Filters</h3>
+              <div class="filters-container">
+                <div class="panel-group" id="accordion">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Country <span class="glyphicon glyphicon-plus"></span></a>
+                      </h4>
+                    </div><!-- .panel-heading -->
+                    <div id="collapseOne" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+                          <button type="button" class="btn btn-default">Egypt</button>
+                          <button type="button" class="btn btn-default">Lebnon</button>
+                          <button type="button" class="btn btn-default">Libya</button>
+                          <button type="button" class="btn btn-default">Moraco</button>
+                          <button type="button" class="btn btn-default">algreia</button>
+                          <button type="button" class="btn btn-default">jordan</button>
+                        </div><!-- .btn-group -->
+                      </div><!-- .panel-body -->
+                    </div><!-- .panel-collapse -->
+                  </div><!-- .panel -->
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">City <span class="glyphicon glyphicon-plus"></span></a>
+                      </h4>
+                    </div><!-- .panel-heading -->
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+                          <button type="button" class="btn btn-default">Cairo</button>
+                          <button type="button" class="btn btn-default">Birout</button>
+                          <button type="button" class="btn btn-default">Trables</button>
+                          <button type="button" class="btn btn-default">Tanga</button>
+                          <button type="button" class="btn btn-default">algreia</button>
+                          <button type="button" class="btn btn-default">sna'a</button>
+                        </div><!-- .btn-group -->
+                      </div><!-- .panel-body -->
+                    </div><!-- .panel-collapse -->
+                  </div><!-- .panel -->
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Category <span class="glyphicon glyphicon-plus"></span></a>
+                      </h4>
+                    </div><!-- .panel-heading -->
+                    <div id="collapse3" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+                          <button type="button" class="btn btn-default">sport</button>
+                          <button type="button" class="btn btn-default">romance</button>
+                          <button type="button" class="btn btn-default">health</button>
+                          <button type="button" class="btn btn-default">politcse</button>
+                          <button type="button" class="btn btn-default">funny</button>
+                          <button type="button" class="btn btn-default">global</button>
+                        </div><!-- .btn-group -->
+                      </div><!-- .panel-body -->
+                    </div><!-- .panel-collapse -->
+                  </div><!-- .panel -->
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Pay ways <span class="glyphicon glyphicon-plus"></span></a>
+                      </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+                          <button type="button" class="btn btn-default">prepaid card</button>
+                          <button type="button" class="btn btn-default">cash</button>
+                          <button type="button" class="btn btn-default">donta</button>
+                          <button type="button" class="btn btn-default">free</button>
+                        </div><!-- .btn-group -->
+                      </div><!-- .panel-body -->
+                    </div><!-- .panel-collapse -->
+                  </div><!-- .panel -->
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Price<span class="glyphicon glyphicon-plus"></span></a>
+                      </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                            <input name="price" placeholder="type the price" class="form-control" type="number">
+                          </div>
+                        </div><!-- .btn-group -->
+                      </div><!-- .panel-body -->
+                    </div><!-- .panel-collapse -->
+                  </div><!-- .panel -->
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">mempers<span class="glyphicon glyphicon-plus"></span></a>
+                      </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                            <input name="mempers" placeholder="type namber of mempers" class="form-control" type="number">
+                          </div>
+                        </div><!-- .btn-group -->
+                      </div><!-- .panel-body -->
+                    </div><!-- .panel-collapse -->
+                  </div><!-- .panel -->
+
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">ads way<span class="glyphicon glyphicon-plus"></span></a>
+                      </h4>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+                          <button type="button" class="btn btn-default">post</button>
+                          <button type="button" class="btn btn-default">story</button>
+                          <button type="button" class="btn btn-default">coverd</button>
+                          <button type="button" class="btn btn-default"> sponsor </button>
+                        </div><!-- .btn-group -->
+                      </div><!-- .panel-body -->
+                    </div><!-- .panel-collapse -->
+                  </div><!-- .panel -->
+                </div><!-- #accordion -->
+              </div><!-- .filters-container -->
+            </section>
+          </aside>
+
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    							div.page-content That Contaianing The Most Content
+    							Have 4 Sections :
+    							1-div#advertisers:
+    							2-div#publishers :
+    							3-div#exchange
+    							4-div#for_sale
+
+    							Note: This Section's id can't be change
+    							becouse it's workes with the <aside> togglers buttons
+    							so be sure if change here you have to change it Up thir :)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <div class="page-content">
+            <!-- Ads Banner section -->
+            <section class="ads">
+              <h3 class="sr-only">ads</h3>
+              <div class="row">
+                <img src="images/ads.jpg" alt="">
+              </div>
+            </section>
+
+            <!-- This is the Socil sites fillters for the sections -->
+            <div class="socils-toggler">
+              <div class="btn-group-vertical btn-group-lg" role="group" aria-label="visible">
+                <button type="button" class="btn btn-default">All</button>
+                <button type="button" class="btn btn-default"><img src="images/fb.png" alt=""></button>
+                <button type="button" class="btn btn-default"><img src="images/tw.png" alt=""></button>
+                <button type="button" class="btn btn-default"><img src="images/yt.png" alt=""></button>
+                <button type="button" class="btn btn-default"><img src="images/insta.png" alt=""></button>
+                <button type="button" class="btn btn-default"><img src="images/sc.png" alt=""></button>
+              </div>
+            </div><!-- .Socils-Toggler -->
+
+
+
+            <!-- This <div> Is Conatin The 4 Sections As a Tabs -->
+            <div class="tab-content">
+
+              <!-- This Is The Tab One Who Contain The Advertisers Section -->
+              <div id="advertisers" class="tab-pane fade in active">
+                <!-- Heading Of The Section -->
+                <section class="title">
+                  <div class="row">
+                    <div class="head">
+                      <h1 class="text-center">
+                        <span class="glyphicon glyphicon-tower"></span> Advertisers
+                      </h1>
+                    </div>
+                  </div>
+                </section>
+
+                <section>
+                  <h3 class="sr-only">posts</h3>
+                  <div class="row">
+                    <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        									div.costome-container Was Created To
+        									Contain The posts In The Larg Screens
+        									With 80% From The screen Width
+    								~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                    <div class="costome-container">
+                      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    												This Is The Post Box Who Contain All Posts
+    												That Mean all Posts Will Be Inside this element
+    									~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                      <div class="post-box col-xs-12">
+                        <!-- Beging Of Post -->
+                        <div class="post">
+                          <div class="row cost-box">
+
+                            <div class="cost-layer">
+                              <div class="cost minmum-cost">99.88 $</div>
+                                <span class="to-sign bold glyphicon glyphicon-chevron-right"></span>
+                              <div class="cost maxmum-cost">250.9 $</div>
+                            </div>
+
+                          </div><!-- cost-box -->
+                          <div class="post-about">
+                            This Is Main Heading For The Post
+                          </div>
+                          <div class="post-describe">
+                            Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+                            Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                            Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+                          </div>
+                          <div class="row">
+                            <div class="filters-box">
+                              <div class="filter-type">sport</div>
+                              <div class="filter-type">cash</div>
+                              <div class="filter-type">Egypt</div>
+                              <div class="filter-type">Cairo</div>
+                              <div class="filter-type">post</div>
+                            </div>
+                          </div><!-- .row -->
+                          <div class="post-footer">
+                            <div class="row post-contact">
+                              <div class="col-sm-6 col-xs-12 user-info">
+                                <a href="user-review-english.html">
+                                  <div class="avatar">
+                                    <img src="images/avatar.jpg" alt="">
+                                  </div>
+                                  <div class="user-name">
+                                   user name
+                                  </div>
+                                </a>
+                              </div>
+                              <div class="contacts-info col-sm-6 col-xs-12 text-right">
+                                <a href="#">
+    															<img src="images/fb.png" alt="">
+    														</a>
+                                <a href="#">
+    															<img src="images/mail.png" alt="">
+    														</a>
+                                <a href="#">
+    															<img src="images/tel.png" alt="">
+    														</a>
+                              </div>
+                            </div><!-- .row -->
+                          </div><!-- .Post-Footer -->
+                        </div><!-- .post -->
+                        <!-- End Of The Post -->
+                      </div><!-- .Post-box -->
+                    </div><!-- .My-Container -->
+                  </div><!-- .row -->
+
+                  <div class="row">
+                    <div class="page-togglers text-center">
+                      <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-lg">
+                          <li>
+                            <a class="btn" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li><a class="btn" href="#">1</a></li>
+                          <li><a class="btn" href="#">2</a></li>
+                          <li><a class="btn" href="#">3</a></li>
+                          <li><a class="btn" href="#">4</a></li>
+                          <li><a class="btn" href="#">5</a></li>
+                          <li>
+                            <a class="btn" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div><!-- .page-togglers -->
+                  </div><!-- .row -->
+                </section>
+              </div><!-- #Advertisers -->
+
+              <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+              <div id="publishers" class="tab-pane fade">
+                <section class="title">
+                  <div class="row">
+                    <div class="head">
+                      <h1 class="text-center"><span class="glyphicon glyphicon-edit"></span> Publishers</h1>
+                    </div>
+                  </div>
+                </section>
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          Cards Modal Box : details btn On Cards
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    						<section class="details">
+    				      <div class="container">
+    				        <!-- Modal -->
+    				        <div class="modal fade" id="details" role="dialog">
+    				          <div class="modal-dialog">
+
+    				            <!-- Modal content-->
+    				            <div class="modal-content">
+    				            	<!-- Modal header -->
+    				              <div class="modal-header">
+    				                <button type="button" class="close" data-dismiss="modal">&times;</button>
+    				                <h4 class="modal-title"><span class="glyphicon glyphicon-align-right"></span> detailse</h4>
+    				              </div>
+
+    				              <!-- Modal body -->
+    				              <div class="modal-body">
+    				              	<div class="row">
+    													<div class="information left-side col-xs-12 col-sm-8">
+    														<div class="main-title">
+    															This is the main title for This post
+    														</div>
+
+    														<div class="conditions">
+                                  Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+                                  Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                                  Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+
+                                  Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+                                  Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                                  Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+    														</div><!-- .conditions -->
+    				                	</div><!-- .information -->
+
+    													<div class="right-side col-sm-4 col-xs-12">
+      													<div class="row">
+        				                	<div class="card-container col-xs-12">
+        					                  <div class="card">
+        					                    <div class="front">
+        					                      <div class="overlay-box">
+        					                        <div class="overlay">
+        					                          <div class="front-info">
+        					                            <h3>This is the main title for This post</h3>
+        					                            <div class="img-box">
+        					                              <img src="images/sc.png" alt="">
+        					                            </div>
+        					                            <span class="glyphicon glyphicon-user"></span>
+        					                            <div class="mempers">23,334K</div>
+        					                          </div>
+        					                        </div><!-- .overlay -->
+        					                        <div class="front-bg">
+        					                          <img src="images/child.jpg" alt="">
+        					                        </div>
+        					                      </div><!-- .overlay-box -->
+        					                    </div><!-- .front -->
+        					                    <div class="back">
+        						                    <div class="row">
+        						                    	<h3>Conditions :</h3>
+        						                    	<div class="conditions">
+                                            Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+                                            Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                                            Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.
+        						                    	</div><!-- condtions -->
+                                          <div class="filters-box">
+                                            <div class="row">
+                                              <div class="col-sm-6">
+                                                <div class="left-side text-left">
+                                                  <div class="filter-type">cash</div>
+                                                  <div class="filter-type">donta</div>
+                                                  <div class="filter-type">free</div>
+                                                  <div class="filter-type">prepaid card</div>
+                                                </div>
+                                              </div><!-- .col -->
+
+
+                                              <div class="line-in col-sm-1">
+                                                <div class="vertical-line"></div>
+                                              </div>
+
+
+                                              <div class="col-sm-6">
+                                                <div class="right-side text-right">
+                                                  <div class="filter-type">post</div>
+                                                  <div class="filter-type">coverd</div>
+                                                  <div class="filter-type">story</div>
+                                                  <div class="filter-type">sponsor</div>
+                                                </div>
+                                              </div>
+                                            </div><!-- .row -->
+                                          </div><!-- .Filters-Box -->
+        						                    </div><!-- .row -->
+        					                    </div><!-- .back -->
+        					                  </div><!-- .card -->
+                                    <div class="card-footer">
+                                      <div class="card-contact col-xs-12">
+                                        <div class="user-info">
+                                          <div class="avatar">
+                                            <img src="images/avatar.jpg" alt="">
+                                          </div>
+                                          <div class="user-name pull-left">
+                                            user name user name
+                                          </div>
+                                          <div class="cost-layer">
+                                            <div class="cost minmum-cost">99.88 $</div>
+                                              <span class="to-sign bold glyphicon glyphicon-chevron-right"></span>
+                                            <div class="cost maxmum-cost">250.9 $</div>
+                                          </div><!-- .cost-layer -->
+                                        </div>
+                                      </div>
+                                    </div><!-- .Card-Footer -->
+        					                </div><!-- .Card-Container -->
+      												  </div><!-- .row -->
+                                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                This is the box Under the card Of the detialse Box an Empty area
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        				                <div class="row"></div>
+                                <!-- ****** -->
+        			                </div><!-- .col -->
+                    				</div><!-- .row -->
+    				              </div><!-- .Modal-Body -->
+
+    				              <!-- Modal-footer -->
+    				              <div class="modal-footer">
+    				                <button type="button" class="close" data-dismiss="modal">Close</button>
+    				      				</div>
+    				            </div><!-- .Modal-Content -->
+    				          </div><!-- .Modal-Dialog -->
+    				        </div><!-- .Modal -->
+    				      </div><!-- .Container -->
+    				    </section><!-- .details -->
+
+                <section class="cards-sec">
+                  <div class="row">
+
+                    <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                      <div class="card">
+                        <div class="front">
+                          <div class="overlay-box">
+                            <div class="overlay">
+                              <div class="front-info">
+                                <h3>Main Title Of This Post</h3>
+
+                                <div class="img-box">
+                                  <img src="images/fb.png" alt="">
+                                </div>
+                                <span class="glyphicon glyphicon-user"></span>
+                                <div class="mempers">23,334K</div>
+
+                              </div>
+                            </div><!-- .overlay -->
+                            <div class="front-bg">
+                              <img src="images/child.jpg" alt="">
+                            </div>
+                          </div><!-- .overlay-box -->
+                        </div><!-- .front -->
+
+                        <div class="back">
+                          <div class="row">
+                            <h3>Conditions :</h3>
+                            <div class="conditions">
+                              Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+                              Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                              Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is. in bed, on you waiting,instead of typing
+                            </div><!-- user-condtions -->
+                            <div class="filters-box">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="left-side text-left">
+                                    <div class="filter-type">cash</div>
+                                    <div class="filter-type">donta</div>
+                                    <div class="filter-type">free</div>
+                                    <div class="filter-type">prepaid card</div>
+                                  </div>
+                                </div><!-- .col -->
+
+
+                                <div class="line-in col-sm-1">
+                                  <div class="vertical-line"></div>
+                                </div>
+
+
+                                <div class="col-sm-6">
+                                  <div class="right-side text-right">
+                                    <div class="filter-type">post</div>
+                                    <div class="filter-type">coverd</div>
+                                    <div class="filter-type">story</div>
+                                    <div class="filter-type">sponsor</div>
+                                  </div>
+                                </div>
+                              </div><!-- .row -->
+                            </div><!-- .Filters-Box -->
+                          </div><!-- .row -->
+                        </div><!-- .back -->
+                      </div><!-- .card -->
+                      <div class="card-footer">
+                        <div class="card-contact col-xs-12">
+                          <div class="user-info">
+                            <a class="pull-left" href="user-review-english.html">
+                              <div class="avatar">
+                                <img src="images/avatar.jpg" alt="">
+                              </div>
+                              <div class="user-name">
+                               user name
+                              </div>
+                            </a>
+                            <div class="cost-layer">
+                              <div class="cost minmum-cost">99.88 $</div>
+                                <span class="to-sign bold glyphicon glyphicon-chevron-right"></span>
+                              <div class="cost maxmum-cost">250.9 $</div>
+                            </div><!-- .cost-layer -->
+                          </div>
+                          <div class="details-btn text-right">
+                            <a href="#" data-toggle="modal" data-target="#details" class="btn btn-default">Check</a>
+                          </div>
+                        </div>
+                      </div><!-- .Card-Footer -->
+                    </div><!-- .Card-Container -->
+                  </div><!-- .row -->
+
+                  <div class="row">
+                    <div class="page-togglers text-center">
+                      <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-lg">
+                          <li>
+                            <a class="btn" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li><a class="btn" href="#">1</a></li>
+                          <li><a class="btn" href="#">2</a></li>
+                          <li><a class="btn" href="#">3</a></li>
+                          <li><a class="btn" href="#">4</a></li>
+                          <li><a class="btn" href="#">5</a></li>
+                          <li>
+                            <a class="btn" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div><!-- .row -->
+
+                </section><!-- .cards-sec -->
+              </div><!-- Publishers -->
+
+              <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+              <div id="exchange" class="tab-pane fade">
+                <section class="title">
+                  <div class="row">
+                    <div class="head">
+                      <h1 class="text-center"><span class="glyphicon glyphicon-refresh"></span> Exchange Of Ads</h1>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="cards-sec">
+                  <div class="row">
+
+                    <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                      <div class="card">
+                        <div class="front">
+                          <div class="overlay-box">
+                            <div class="overlay">
+                              <div class="front-info">
+                                <h3>Main Title Of This Post</h3>
+
+                                <div class="img-box">
+                                  <img src="images/fb.png" alt="">
+                                </div>
+                                <span class="glyphicon glyphicon-user"></span>
+                                <div class="mempers">23,334K</div>
+
+                              </div>
+                            </div><!-- .overlay -->
+                            <div class="front-bg">
+                              <img src="images/child.jpg" alt="">
+                            </div>
+                          </div><!-- .overlay-box -->
+                        </div><!-- .front -->
+
+                        <div class="back">
+                          <div class="row">
+                            <h3>Conditions :</h3>
+                            <div class="conditions">Should I fall for you, to be standing?Should I die, for you to keep living?
+                              Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+                              Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                              Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is. moment I spent in bed, on you waiting,instead of typing
+                            </div><!-- user-condtions -->
+
+                            <div class="filters-box">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="left-side text-left">
+                                    <div class="filter-type">prepaid card</div>
+                                    <div class="filter-type">cash</div>
+                                    <div class="filter-type">donta</div>
+                                    <div class="filter-type">free</div>
+                                  </div>
+                                </div><!-- .col -->
+
+                                <div class="line-in col-sm-1">
+                                  <div class="vertical-line"></div>
+                                </div>
+
+                                <div class="col-sm-5">
+                                  <div class="right-side text-right">
+                                    <div class="filter-type">post</div>
+                                    <div class="filter-type">coverd</div>
+                                    <div class="filter-type">story</div>
+                                    <div class="filter-type">sponsor</div>
+                                  </div>
+                                </div>
+                              </div><!-- .row -->
+                            </div><!-- .Filters-Box -->
+
+                          </div><!-- .row -->
+                        </div><!-- .back -->
+                      </div><!-- .card -->
+                      <div class="card-footer">
+                        <div class="card-contact col-xs-12">
+                          <div class="user-info">
+                            <a href="user-review-english.html">
+                              <div class="avatar">
+                                <img src="images/avatar.jpg" alt="">
+                              </div>
+                              <div class="user-name">
+                               user name
+                              </div>
+                            </a>
+                          </div><!-- .user-info -->
+
+                        </div><!-- .card-contact -->
+                      </div><!-- .Card-Footer -->
+                    </div><!-- .Card-Container -->
+                  </div><!-- .row -->
+
+                  <div class="row">
+                    <div class="page-togglers text-center">
+                      <nav aria-label="Page navigation">
+                        <ul class="pagination pagination-lg">
+                          <li>
+                            <a class="btn" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li><a class="btn" href="#">1</a></li>
+                          <li><a class="btn" href="#">2</a></li>
+                          <li><a class="btn" href="#">3</a></li>
+                          <li><a class="btn" href="#">4</a></li>
+                          <li><a class="btn" href="#">5</a></li>
+                          <li>
+                            <a class="btn" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div><!-- .row -->
+                </section><!-- .cards-sec -->
+              </div><!-- #Exchange -->
+
+              <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+              <div id="for_sale" class="tab-pane fade">
+                <section class="title">
+                  <div class="row">
+                    <div class="head">
+                      <h1 class="text-center"><span class="glyphicon glyphicon-usd"></span> Pages For Sale</h1>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="cards-sec">
+                  <div class="row">
+
+                    <div class="card-container col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                      <div class="card">
+                        <div class="front">
+                          <div class="overlay-box">
+                            <div class="overlay">
+                              <div class="front-info">
+                                <h3>Main Title Of This Post</h3>
+
+                                <div class="img-box">
+                                  <img src="images/fb.png" alt="">
+                                </div>
+                                <span class="glyphicon glyphicon-user"></span>
+                                <div class="mempers">23,334K</div>
+
+                              </div>
+                            </div><!-- .overlay -->
+                            <div class="front-bg">
+                              <img src="images/child.jpg" alt="">
+                            </div>
+                          </div><!-- .overlay-box -->
+                        </div><!-- .front -->
+
+                        <div class="back">
+                          <div class="row">
+                            <h3>Conditions :</h3>
+                            <div class="conditions">
+                              Oh acceptance apartments up sympathize astonished delightful. Waiting him new lasting towards. Continuing melancholy especially so to. Me unpleasing impossible in attachment announcing so astonished. What ask leaf may nor upon door. Tended remain my do stairs. Oh smiling amiable am so visited cordial in offices hearted.
+
+                              Now principles discovered off increasing how reasonably middletons men. Add seems out man met plate court sense. His joy she worth truth given. All year feet led view went sake. You agreeable breakfast his set perceived immediate. Stimulated man are projecting favourable middletons can cultivated.
+
+                              Do greatest at in learning steepest. Breakfast extremity suffering one who all otherwise suspected. He at no nothing forbade up moments. Wholly uneasy at missed be of pretty whence. John way sir high than law who week. Surrounded prosperous introduced it if is up dispatched. Improved so strictly produced answered elegance is.ry moment I spent in bed, on you waiting,instead of typing
+                            </div><!-- user-condtions -->
+                            <div class="filters-box">
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <div class="left-side text-left">
+                                    <div class="filter-type">prepaid card</div>
+                                    <div class="filter-type">cash</div>
+                                    <div class="filter-type">donta</div>
+                                    <div class="filter-type">free</div>
+                                  </div>
+                                </div><!-- .col -->
+
+
+                                <div class="line-in col-sm-1">
+                                  <div class="vertical-line"></div>
+                                </div>
+
+
+                                <div class="col-sm-5">
+                                  <div class="right-side text-right">
+                                    <div class="filter-type">post</div>
+                                    <div class="filter-type">coverd</div>
+                                    <div class="filter-type">story</div>
+                                    <div class="filter-type">sponsor</div>
+                                  </div>
+                                </div>
+                              </div><!-- .row -->
+                            </div><!-- .Filters-Box -->
+                          </div><!-- .row -->
+                        </div><!-- .back -->
+                      </div><!-- .card -->
+
+                      <div class="card-footer">
+                        <div class="card-contact col-xs-12">
+                          <div class="user-info">
+                            <a href="user-review-english.html">
+                              <div class="avatar">
+                                <img src="images/avatar.jpg" alt="">
+                              </div>
+                              <div class="user-name">
+                               user name
+                              </div>
+                            </a>
+                            <div class="cost-layer">
+                              <div class="cost minmum-cost">99.88 $</div>
+                                <span class="to-sign bold glyphicon glyphicon-chevron-right"></span>
+                              <div class="cost maxmum-cost">250.9 $</div>
+                            </div><!-- .cost-layer -->
+                          </div><!-- .user-info -->
+                        </div><!-- .card-contact -->
+                      </div><!-- .Card-Footer -->
+                    </div><!-- .Card-Container -->
+                  </div><!-- .row -->
+                </section><!-- .cards-sec -->
+
+                <div class="row">
+                  <div class="page-togglers text-center">
+                    <nav aria-label="Page navigation">
+                      <ul class="pagination pagination-lg">
+                        <li>
+                          <a class="btn" href="#" aria-label="Previous">
+    							        	<span aria-hidden="true">&laquo;</span>
+    							      	</a>
+                        </li>
+                        <li><a class="btn" href="#">1</a></li>
+                        <li><a class="btn" href="#">2</a></li>
+                        <li><a class="btn" href="#">3</a></li>
+                        <li><a class="btn" href="#">4</a></li>
+                        <li><a class="btn" href="#">5</a></li>
+                        <li>
+                          <a class="btn" href="#" aria-label="Next">
+    							       		<span aria-hidden="true">&raquo;</span>
+    							      	</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div><!-- .row -->
+
+              </div><!-- #for_sale -->
+            </div><!-- .tab-content -->
+          </div><!-- .Page -->
+        </div><!-- .flex-Container -->
+
+        <!-- Ads Banner section -->
+        <section class="ads">
+          <h3 class="sr-only">ads</h3>
+          <div class="row">
+            <img src="images/ads.jpg" alt="">
+          </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="row contacts">
+            <div class="col-sm-6 col-xs-12">
+              <a href="questions-english.html" class="btn btn-default">Common Questions <span class="glyphicon glyphicon-question-sign"></span></a>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+              <a href="contactus-english.html" class="btn btn-default">Contact Us <span class="glyphicon glyphicon-earphone"></span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="socils col-xs-12 text-center">
+          <a href="#">
+  					<img src="images/fb.png" alt="">
+  				</a>
+          <a href="#">
+  					<img src="images/tw.png" alt="">
+  				</a>
+          <a href="#">
+  					<img src="images/insta.png" alt="">
+  				</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrapValidator.min.js"></script>
+    <script src="js/plugins.js"></script>
+  </body>
+</html>

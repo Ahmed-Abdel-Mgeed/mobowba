@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <title>New Post-english</title>
+
+  <!-- Facebook and Twitter integration -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:image" content="">
+  <meta name="twitter:url" content="">
+  <meta name="twitter:card" content="">
+
+  <!-- styles -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Modernizr JS -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                <header> Have 3 Sections :
+                  1-Navbar
+                  2-Section.login-form
+                  3-section.signup-form
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <header class="header">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="btn lang-btn" href="new-post-arabic.html">ع</a>
+          <div class="navbar-brand">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <button data-toggle="dropdown" class="dropdown-toggle">
+
+                  <span class="page-user-img">
+                    <img src="images/avatar.jpg" alt="">
+                  </span>
+
+                  <span class="page-user-name">
+                    user name...
+                  </span>
+
+                  <b class="caret"></b>
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="divider"></li>
+                  <li>
+                    <a href="new-post-english.html"><span class="glyphicon glyphicon-plus"></span> add new page </a>
+                  </li>
+                  <li><a href="new-ads-english.html"><span class="glyphicon glyphicon-th"></span> add new ads</a></li>
+                  <li class="divider"></li>
+                  <li><a href="user-page-english.html"><span class="glyphicon glyphicon-user"></span> profile</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> LogOut</a></li>
+                  <li class="divider"></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- .brand -->
+        </div><!-- .navbar-header -->
+        <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="home-english.html"><span class="glyphicon glyphicon-home"></span> Home </a></li>
+            <li><a href="contactus-english.html"><span class="glyphicon glyphicon-earphone"></span> Contact Us </a></li>
+            <li><a href="questions-english.html"><span class="glyphicon glyphicon-question-sign"></span> Common Questions </a></li>
+            <li><a href="#" data-toggle="modal" data-target="#signup"><span class="glyphicon glyphicon-user"></span> Sign Up </a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in"></span> Login </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                              New Post page Content
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <main>
+    <section class="new-post">
+
+      <!-- page persentation -->
+      <div class="title">
+        <div class="row">
+          <div class="head">
+            <h1 class="text-center"><span class="glyphicon glyphicon-plus"></span> New page</h1>
+          </div>
+        </div><!-- .row -->
+      </div><!-- .title -->
+
+      <div class="container">
+        <div class="row">
+          <div class="form-box">
+            <form action="">
+              <div class="row">
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      Start Main Detailse
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <div class="layers main-detailse-layer">
+                  <div class="row">
+
+                    <div class="col-sm-4">
+                      <div class="row">
+                        <div class="text-center">
+                          <div class="capture-photo">
+                            <img src="images/avatar.jpg" alt="">
+                          </div>
+
+                          <div class="photo-upload-btn">
+                            <input type="file">
+                          </div>
+                        </div>
+                      </div><!-- .row -->
+                    </div><!-- .col -->
+
+
+                    <div class="col-sm-8">
+                      <!-- Text input-->
+                      <div class="form-group">
+                        <label class="control-label">Page Name</label>
+                        <div class=" inputGroupContainer">
+                          <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input id="title" name="main_title" class="form-control" type="text" placeholder="Main Title...">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-xs-6">
+                          <!-- Text input-->
+                          <div class="form-group">
+                            <label class="control-label">Social Site</label>
+                            <div class=" inputGroupContainer">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-picture"></i></span>
+                                <select class="form-control">
+                                  <option value="All">All</option>
+                                  <option value="Facebook">Facebook</option>
+                                  <option value="Twitter">Twitter</option>
+                                  <option value="Youtube">Youtube</option>
+                                  <option value="Instagram">Instagram</option>
+                                  <option value="SnapChat">SnapChat</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .col -->
+
+                        <div class="col-xs-6">
+                          <!-- Text input-->
+                          <div class="form-group mempers-num">
+                            <label class="control-label">Mempers</label>
+                            <div class=" inputGroupContainer">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="mempers" name="Number of mempers" class="form-control" type="text" placeholder="Mempers...">
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .col -->
+                      </div><!-- .row -->
+
+                       <div class="row">
+                        <div class="col-xs-6">
+                          <!-- Text input-->
+                          <div class="form-group">
+                            <label class="control-label">Country</label>
+                            <div class=" inputGroupContainer">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                                <select class="form-control">
+                                  <option value="Egypt">Egypt</option>
+                                  <option value="Lebnon">Lebnon</option>
+                                  <option value="Libya">Libya</option>
+                                  <option value="Moraco">Moraco</option>
+                                  <option value="algreia">algreia</option>
+                                  <option value="jordan">jordan</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .col -->
+
+                        <div class="col-xs-6">
+                          <div class="form-group">
+                            <label class="control-label">City</label>
+                            <div class=" inputGroupContainer">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                                <select class="form-control" id="City">
+                                  <option value="Cairo">Cairo</option>
+                                  <option value="Birout">Birout</option>
+                                  <option value="Trables">Trables</option>
+                                  <option value="Tanga">Tanga</option>
+                                  <option value="algreia">algreia</option>
+                                  <option value="sna'a">sna'a</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .col -->
+                      </div><!-- .row -->
+
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-group">
+                            <label class="control-label">Category</label>
+                            <div class=" inputGroupContainer">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-th-list"></i></span>
+                                <select class="form-control" id="Category">
+                                  <option value="sport">Sport</option>
+                                  <option value="romance">Romance</option>
+                                  <option value="health">Health</option>
+                                  <option value="politcse">Politcse</option>
+                                  <option value="funny">Funny</option>
+                                  <option value="global">Global</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .col -->
+
+                        <div class="col-md-8">
+                          <!-- Text input-->
+                          <div class="form-group">
+                            <label class="control-label">Tags</label>
+                            <div class=" inputGroupContainer">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-tags"></i></span>
+                                <input name="tags" class="form-control" type="text" placeholder="Sparat with ','">
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .col -->
+                      </div><!-- .row -->
+
+                    </div><!-- .col -->
+                  </div><!-- .row -->
+                </div>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      End Main Detailse
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      Start Layers Togglers Buttons
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <div class="section-layers-togglers text-center">
+                  <ul class="nav nav-pills">
+
+                    <li class="presentation"> post in </li>
+
+                    <li class="active">
+                      <a data-toggle="pill" href="#publishers_layer" class="pub"><span class="glyphicon glyphicon-edit"></span> Publishers</a>
+                    </li>
+
+                    <li>
+                      <a data-toggle="pill" href="#exchange_layer" class="exc"><span class="glyphicon glyphicon-refresh"></span> Exchange Of Ads</a>
+                    </li>
+
+                    <li>
+                      <a data-toggle="pill" href="#for_sale_layer" class="pfs"><span class="glyphicon glyphicon-usd"></span> Pages For Sale</a>
+                    </li>
+
+                    <li class="presentation"> section </li>
+
+                  </ul>
+                </div><!-- .section-layers-togglers -->
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      End Layers Togglers Buttons
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                   Start Layers Tabs
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <div class="tab-content">
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Start Publishers section Info
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                  <div class="layers publishers-layer tab-pane fade in active" id="publishers_layer">
+                    <div class="row">
+                      <div class="col-xs-12">
+
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <label class="control-label">pay way</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                  <select class="form-control" multiple>
+                                    <option value="prepaid card  ">prepaid card  </option>
+                                    <option value="Cash">Cash</option>
+                                    <option value="Donta">Donta</option>
+                                    <option value="Free">Free</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <label class="control-label">ads way</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-bullhorn"></i></span>
+                                  <select class="form-control" multiple>
+                                    <option value="post">Post</option>
+                                    <option value="story">Story</option>
+                                    <option value="coverd">Coverd</option>
+                                    <option value=" sponsor "> sponsor </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .row -->
+
+                        <div class="row">
+
+                          <div class="col-xs-12 col-sm-6">
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="control-label">MinMum Price</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                  <input name="cost" class="form-control" type="text" placeholder="From...">
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- .col -->
+
+                          <div class="col-xs-12 col-sm-6">
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="control-label">MaxMum Price</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                  <input name="cost" class="form-control" type="text" placeholder="To...">
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- .col -->
+
+                        </div><!-- .row -->
+
+                        <div class="row">
+                          <div class="form-group">
+                            <label class="control-label">describtion</label>
+                            <div class=" inputGroupContainer">
+                              <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                <textarea class="form-control" rows="6">detailse...</textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div><!-- .row -->
+                      </div><!-- .col -->
+                    </div><!-- .row -->
+                  </div><!-- .layer -->
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        End Publishers section Info
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Start Exchange section Info
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                  <div class="layers exchange-layer tab-pane fade" id="exchange_layer">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-sm-8 col-xs-12">
+                            <div class="form-group">
+                              <label class="control-label">ads way</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-bullhorn"></i></span>
+                                  <select class="form-control" multiple>
+                                    <option value="post">Post</option>
+                                    <option value="story">Story</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- .col -->
+
+
+                          <div class="col-sm-8 col-xs-12">
+                            <div class="form-group">
+                              <label class="control-label">describtion</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                  <textarea class="form-control" rows="4">your conditions...</textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- .col -->
+                        </div>
+                      </div>
+                    </div><!-- .row -->
+                  </div><!-- .layer -->
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        End Exchange section Info
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Start For-Sale section Info
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                  <div class="layers for-sale-layer tab-pane fade" id="for_sale_layer">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-6">
+                            <div class="form-group">
+                              <label class="control-label">pay way</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                  <select class="form-control" multiple>
+                                    <option value="prepaid card  ">prepaid card  </option>
+                                    <option value="Cash">Cash</option>
+                                    <option value="Donta">Donta</option>
+                                    <option value="Free">Free</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div><!-- .row -->
+
+                        <div class="row">
+
+                          <div class="col-xs-12 col-sm-6">
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="control-label">MinMum Price</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                  <input name="cost" class="form-control" type="text" placeholder="From...">
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- .col -->
+
+                          <div class="col-xs-12 col-sm-6">
+                            <!-- Text input-->
+                            <div class="form-group">
+                              <label class="control-label">MaxMum Price</label>
+                              <div class=" inputGroupContainer">
+                                <div class="input-group">
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-usd"></i></span>
+                                  <input name="cost" class="form-control" type="text" placeholder="To...">
+                                </div>
+                              </div>
+                            </div>
+                          </div><!-- .col -->
+
+                        </div><!-- .row -->
+                      </div>
+                    </div><!-- .row -->
+                  </div><!-- .layer -->
+                  <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        End For-Sale section Info
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                </div><!-- .tab-content -->
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                  End Layers Tabs
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+
+              </div><!-- .row -->
+
+              <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Submit button
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="button-layer">
+                    <div class="red-line"></div>
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-open"></span>
+                       save
+                    </button>
+                  </div>
+                </div><!-- .col -->
+              </div><!-- .row -->
+            </form>
+          </div><!-- .form-box -->
+        </div><!-- .row -->
+
+
+
+      </div><!-- .container -->
+
+    </section>
+  </main>
+
+
+
+
+  <footer class="site-footer">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="row contacts">
+          <div class="col-sm-6 col-xs-12">
+            <a href="questions-english.html" class="btn btn-default">Common Questions <span class="glyphicon glyphicon-question-sign"></span></a>
+          </div>
+          <div class="col-sm-6 col-xs-12">
+            <a href="contactus-english.html" class="btn btn-default">Contact Us <span class="glyphicon glyphicon-earphone"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="socils col-xs-12 text-center">
+        <a href="#">
+          <img src="images/fb.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/tw.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/insta.png" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrapValidator.min.js"></script>
+  <script src="js/plugins.js"></script>
+</body>
+
+</html>
